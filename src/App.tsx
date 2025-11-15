@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useApp } from './contexts/AppContext';
-import { loadRevisionContent, shuffleArray } from './utils/contentLoader';
+import { loadRevisionContent } from './utils/contentLoader';
+import { prioritizeQuestions, smartShuffle } from './utils/smartRevision';
 import { QuestionCard } from './components/QuestionCard';
 import { AnswerOptions } from './components/AnswerOptions';
 import { Feedback } from './components/Feedback';
@@ -12,20 +13,25 @@ import './App.css';
 function App() {
   const { settings, recordAnswer } = useApp();
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [allQuestions, setAllQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showFeedback, setShowFeedback] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Load and shuffle questions on mount
+  // Load and prioritize questions on mount
   useEffect(() => {
     async function loadQuestions() {
       try {
         setIsLoading(true);
         const content = await loadRevisionContent();
-        const shuffled = shuffleArray(content.questions);
-        setQuestions(shuffled);
+        setAllQuestions(content.questions);
+
+        // Use smart revision algorithm
+        const prioritized = await prioritizeQuestions(content.questions);
+        const smartShuffled = smartShuffle(prioritized);
+        setQuestions(smartShuffled);
         setIsLoading(false);
       } catch (err) {
         console.error('Failed to load questions:', err);
@@ -57,17 +63,18 @@ function App() {
     setShowFeedback(true);
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     setSelectedAnswer(null);
     setShowFeedback(false);
 
-    // Move to next question or shuffle and restart
+    // Move to next question or smart shuffle and restart
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      // Reshuffle questions for continuous practice
-      const shuffled = shuffleArray(questions);
-      setQuestions(shuffled);
+      // Smart reshuffle for continuous practice
+      const prioritized = await prioritizeQuestions(allQuestions);
+      const smartShuffled = smartShuffle(prioritized);
+      setQuestions(smartShuffled);
       setCurrentQuestionIndex(0);
     }
   };

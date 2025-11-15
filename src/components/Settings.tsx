@@ -1,18 +1,36 @@
 import { useState } from 'react';
 import { useApp } from '../contexts/AppContext';
+import { Statistics } from './Statistics';
 import './Settings.css';
 
 export function Settings() {
-  const { settings, updateSettings, resetSession } = useApp();
+  const { settings, updateSettings, resetSession, resetAllData } = useApp();
   const [isOpen, setIsOpen] = useState(false);
+  const [showStats, setShowStats] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const handleReset = () => {
-    if (confirm('Are you sure you want to reset your score and start over?')) {
+    if (confirm('Are you sure you want to reset your current session score?')) {
       resetSession();
       setIsOpen(false);
     }
+  };
+
+  const handleResetAll = async () => {
+    if (
+      confirm(
+        'Are you sure you want to reset ALL data? This will delete all your statistics, history, and settings. This cannot be undone!'
+      )
+    ) {
+      await resetAllData();
+      setIsOpen(false);
+    }
+  };
+
+  const handleShowStats = () => {
+    setShowStats(true);
+    setIsOpen(false);
   };
 
   return (
@@ -174,19 +192,35 @@ export function Settings() {
                 </label>
               </div>
 
-              {/* Reset Button */}
+              {/* Actions */}
               <div className="setting-group">
+                <h3>Actions</h3>
                 <button
-                  className="btn-secondary btn-reset"
+                  className="btn-primary btn-action"
+                  onClick={handleShowStats}
+                >
+                  📊 View Statistics
+                </button>
+                <button
+                  className="btn-secondary btn-action"
                   onClick={handleReset}
                 >
-                  Reset Score
+                  Reset Session Score
+                </button>
+                <button
+                  className="btn-secondary btn-action btn-danger"
+                  onClick={handleResetAll}
+                >
+                  ⚠️ Reset All Data
                 </button>
               </div>
             </div>
           </div>
         </>
       )}
+
+      {/* Statistics Modal */}
+      {showStats && <Statistics onClose={() => setShowStats(false)} />}
     </div>
   );
 }
