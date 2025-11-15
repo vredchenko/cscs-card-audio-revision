@@ -1,0 +1,250 @@
+{
+  "version": "1.0.0",
+  "metadata": {
+    "title": "CSCS Health & Safety Sample Questions",
+    "description": "Sample revision questions for CSCS certification exam covering health and safety on UK building sites",
+    "categories": [
+      "General Safety",
+      "PPE (Personal Protective Equipment)",
+      "Manual Handling",
+      "Working at Height",
+      "Electrical Safety",
+      "Fire Safety",
+      "Hazardous Substances"
+    ],
+    "author": "Sample Content",
+    "lastUpdated": "2025-11-15"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "question": "What is the main reason for wearing a hard hat on a construction site?",
+      "answers": [
+        "To keep your head warm",
+        "To protect your head from falling objects",
+        "To look professional",
+        "To comply with company uniform policy"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Hard hats are essential PPE designed to protect your head from falling objects, bumps, and other head injuries on construction sites.",
+      "category": "PPE (Personal Protective Equipment)",
+      "difficulty": "easy",
+      "tags": ["ppe", "head-protection", "safety-equipment"]
+    },
+    {
+      "id": "q002",
+      "question": "What should you do if you discover a damaged power tool on site?",
+      "answers": [
+        "Use it carefully",
+        "Report it and do not use it",
+        "Try to fix it yourself",
+        "Hide it so no one else uses it"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Damaged power tools must be reported immediately and taken out of service. Never use faulty equipment as it could cause serious injury or death.",
+      "category": "Electrical Safety",
+      "difficulty": "easy",
+      "tags": ["tools", "electrical", "reporting"]
+    },
+    {
+      "id": "q003",
+      "question": "What is the recommended maximum weight for a person to lift manually?",
+      "answers": [
+        "10 kg",
+        "15 kg",
+        "25 kg",
+        "There is no set limit - it depends on the individual and circumstances"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "There is no single safe weight limit. What is safe depends on factors including the load characteristics, working conditions, and individual capability. Risk assessment is essential.",
+      "category": "Manual Handling",
+      "difficulty": "medium",
+      "tags": ["manual-handling", "lifting", "risk-assessment"]
+    },
+    {
+      "id": "q004",
+      "question": "At what height does work become 'working at height' under UK regulations?",
+      "answers": [
+        "Any height where a person could fall and be injured",
+        "2 metres or above",
+        "3 metres or above",
+        "Only when using ladders or scaffolding"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Working at height means working anywhere where a person could fall a distance liable to cause personal injury, regardless of the specific height. This could even be at ground level near an excavation.",
+      "category": "Working at Height",
+      "difficulty": "medium",
+      "tags": ["height", "falls", "regulations"]
+    },
+    {
+      "id": "q005",
+      "question": "What does this sign indicate?",
+      "image": {
+        "url": "/images/mandatory-eye-protection.svg",
+        "alt": "Blue circular sign with white pictogram of safety glasses",
+        "caption": "Mandatory safety sign"
+      },
+      "answers": [
+        "Eye protection must be worn",
+        "Eye tests available",
+        "Welding area",
+        "Glasses wearers only"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Blue circular signs with white pictograms indicate mandatory actions. This sign means eye protection must be worn in this area.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["signage", "ppe", "eye-protection"]
+    },
+    {
+      "id": "q006",
+      "question": "If you discover a fire on site, what is the first thing you should do?",
+      "answers": [
+        "Try to put it out yourself",
+        "Take photos for evidence",
+        "Raise the alarm",
+        "Find out what caused it"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The first priority on discovering a fire is to raise the alarm so that everyone can evacuate safely. Only attempt to fight the fire if you are trained and it is safe to do so.",
+      "category": "Fire Safety",
+      "difficulty": "easy",
+      "tags": ["fire", "emergency", "evacuation"]
+    },
+    {
+      "id": "q007",
+      "question": "What is the purpose of a risk assessment?",
+      "answers": [
+        "To identify hazards and reduce risks",
+        "To find out who to blame if something goes wrong",
+        "To meet legal requirements only"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Risk assessments identify hazards and evaluate the risks, allowing appropriate control measures to be implemented to prevent accidents and injuries.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["risk-assessment", "hazards", "prevention"]
+    },
+    {
+      "id": "q008",
+      "question": "What does COSHH stand for?",
+      "answers": [
+        "Control of Substances Hazardous to Health",
+        "Construction Safety and Health Handbook",
+        "Control of Site Hazards and Health",
+        "Company Standards for Health and Hygiene",
+        "Control of Scaffolding and Hoisting Heights"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "COSHH stands for Control of Substances Hazardous to Health. These regulations require employers to control substances that are hazardous to health.",
+      "category": "Hazardous Substances",
+      "difficulty": "medium",
+      "tags": ["coshh", "regulations", "hazardous-materials"]
+    },
+    {
+      "id": "q009",
+      "question": "Who is responsible for safety on a construction site?",
+      "answers": [
+        "Only the site manager",
+        "Only the health and safety officer",
+        "Everyone working on site",
+        "Only supervisors and foremen"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Everyone has a responsibility for safety on site. While managers and supervisors have specific duties, all workers must take reasonable care of their own safety and that of others.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["responsibility", "safety-culture"]
+    },
+    {
+      "id": "q010",
+      "question": "What color are fire exit signs in the UK?",
+      "answers": [
+        "Red with white text",
+        "Green with white text",
+        "Blue with white text",
+        "Yellow with black text"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Fire exit signs in the UK are green with white pictograms and text. Green indicates safe conditions or emergency escape routes.",
+      "category": "Fire Safety",
+      "difficulty": "easy",
+      "tags": ["signage", "fire", "evacuation"]
+    },
+    {
+      "id": "q011",
+      "question": "When should safety boots with steel toe caps be worn?",
+      "answers": [
+        "Only when carrying heavy items",
+        "Only in wet conditions",
+        "At all times on a construction site",
+        "Only when required by your supervisor"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Safety boots with protective toe caps should be worn at all times on construction sites to protect feet from falling objects, sharp materials, and other hazards.",
+      "category": "PPE (Personal Protective Equipment)",
+      "difficulty": "easy",
+      "tags": ["ppe", "footwear", "foot-protection"]
+    },
+    {
+      "id": "q012",
+      "question": "What should you do if you are asked to do work that you think is unsafe?",
+      "answers": [
+        "Do the work quickly to get it over with",
+        "Refuse to do the work and report your concerns",
+        "Do the work but complain afterwards",
+        "Ask a colleague to do it instead"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "You have the right to refuse unsafe work. Report your concerns to your supervisor immediately. Safety always comes first, and you cannot be dismissed for raising genuine safety concerns.",
+      "category": "General Safety",
+      "difficulty": "medium",
+      "tags": ["workers-rights", "unsafe-work", "reporting"]
+    },
+    {
+      "id": "q013",
+      "question": "What is the voltage of the recommended safe electrical supply for power tools on construction sites?",
+      "answers": [
+        "230 volts",
+        "110 volts",
+        "12 volts",
+        "415 volts"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "110 volts is the recommended safe voltage for electrical equipment on construction sites. This lower voltage significantly reduces the risk of serious injury from electric shock.",
+      "category": "Electrical Safety",
+      "difficulty": "medium",
+      "tags": ["electrical", "voltage", "power-tools"]
+    },
+    {
+      "id": "q014",
+      "question": "What does a triangular yellow sign with a black border indicate?",
+      "answers": [
+        "Mandatory instruction",
+        "Warning of a hazard",
+        "Prohibition",
+        "Safe condition"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Triangular yellow signs with black borders and symbols are warning signs. They alert you to potential hazards such as electrical risks, moving vehicles, or slippery surfaces.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["signage", "hazard-warnings"]
+    },
+    {
+      "id": "q015",
+      "question": "What is the safest way to descend a ladder?",
+      "answers": [
+        "Facing forwards, looking down",
+        "Facing the ladder, maintaining three points of contact",
+        "Sliding down the sides",
+        "Jumping from halfway down"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Always face the ladder when ascending or descending, and maintain three points of contact (two hands and one foot, or two feet and one hand) at all times.",
+      "category": "Working at Height",
+      "difficulty": "easy",
+      "tags": ["ladders", "height", "safe-working-practices"]
+    }
+  ]
+}
