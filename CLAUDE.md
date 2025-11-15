@@ -23,40 +23,58 @@ A Progressive Web App (PWA) designed to help dyslexic individuals revise for the
 ## Core Features
 
 ### Accessibility-First Design
-- Text-to-speech narration for questions and answers
+- **Display Modes**:
+  - Normal mode (default)
+  - Dyslexia-friendly mode (optional, user-selectable)
+- **Text-to-Speech**:
+  - Manual trigger by default
+  - Auto-play mode available via app menu
+  - Narration for questions and answers
 - Touch-friendly UI optimized for mobile devices
-- Dyslexia-friendly design considerations
 
 ### Learning Experience
 - Randomized question presentation from JSON content
-- Multiple choice answer format
-- Real-time score tracking
+- Flexible multiple choice answer format (variable number of options)
+- Continuous question flow
+- Real-time score tracking (session-based)
 - Immediate feedback with correct answers shown on incorrect responses
-- Session-based progress tracking
 
 ## Project Milestones
 
 ### Milestone 1: Generic Revision PWA Framework
 Build a content-agnostic revision application that:
 - Accepts structured JSON input for revision content
-- Renders questions with multiple choice answers
-- Implements text-to-speech using Chrome Web Speech API
+- Renders questions with flexible multiple choice answers (variable number of options)
+- Implements text-to-speech using Chrome Web Speech API (manual trigger + auto-play mode)
 - Provides touch-optimized answer selection
-- Tracks and displays user scores
+- Tracks and displays user scores (session-based)
 - Shows correct answers when user answers incorrectly
-- Randomizes question order for varied practice sessions
+- Randomizes question order for continuous revision flow
+- Normal and dyslexia-friendly display modes
 
-**JSON Structure** (to be defined):
-- Question bank format
-- Answer options structure
-- Metadata (categories, difficulty, etc.)
+**JSON Structure Requirements**:
+- Flexible question bank format
+- Variable number of answer options per question
+- Support for optional image content in questions
+- Metadata (categories, topics, etc.)
 
 ### Milestone 2: CSCS Content Integration
 Source and parse actual CSCS revision content:
+- **Content Focus**: Health and safety on UK building sites
 - Research existing online resources
 - Potential web scraping of public content
 - Reverse-engineering existing services/apps (where legally permissible)
+- Handle questions with photo/image content
 - Convert content into the JSON format defined in Milestone 1
+
+### Milestone 3: Persistent Storage & Smart Revision
+Implement persistent progress tracking and intelligent question selection:
+- Use localStorage or PWA APIs for cross-session storage
+- Track historical scores and answer accuracy
+- Identify weak areas based on previous performance
+- Prioritize questions user has answered incorrectly
+- Session history and progress analytics
+- Optional: Spaced repetition algorithm for optimal learning
 
 ## Deployment Strategy
 
@@ -65,33 +83,46 @@ Source and parse actual CSCS revision content:
 - PWA manifest for "Add to Home Screen" functionality
 - Service worker for offline capabilities (optional)
 
-## Open Questions & Considerations
+## Design Decisions (Confirmed)
 
 ### Content Structure
-- How many answer choices per question? (e.g., 4 options)
-- Question categorization needed? (by topic/difficulty)
-- Should questions have explanations for correct answers?
+- ✓ Flexible number of answer choices per question
+- ✓ Questions may include photos/images
+- ✓ Content focus: Health and safety on UK building sites
+- ✓ Continuous question flow (no fixed session length)
 
 ### Accessibility & UX
-- Specific font preferences for dyslexia (e.g., OpenDyslexic, Comic Sans)?
-- Color contrast requirements?
-- Text size controls?
-- Speed controls for text-to-speech?
+- ✓ Normal mode (default) + Dyslexia-friendly mode (optional)
+- ✓ Manual trigger TTS (default) + Auto-play mode (in menu)
+- ✓ Touch-optimized for mobile
+- Font/color preferences to be determined in implementation
 
 ### Score & Progress Tracking
-- Session-based only or persistent storage (localStorage)?
-- Progress analytics (questions attempted, accuracy rate)?
-- Review mode for incorrectly answered questions?
+- ✓ Milestone 1: Session-based scoring
+- ✓ Milestone 3: Persistent storage with smart revision
+- ✓ Show correct answers on incorrect responses
 
 ### Browser & Device Support
-- Chrome on Android (primary)
-- iOS Safari support needed?
-- Desktop browser support priority?
-- Minimum Android/Chrome version?
+- ✓ Primary: Chrome on Android
+- Secondary browser support TBD
+
+## Open Questions
+
+### Dyslexia-Friendly Mode Specifics
+- Font choice (OpenDyslexic, Comic Sans, Arial, etc.)
+- Background color (beige/cream vs white)
+- Text spacing and line height
+- Color coding for answers
+
+### Additional Features
+- Should questions have explanations for correct answers?
+- Question categorization/filtering by topic?
+- Practice vs exam mode?
+- Timed questions (exam simulation)?
 
 ### PWA Features
-- Offline mode capability?
-- Install prompts?
+- Offline mode capability priority?
+- Install prompts and home screen icon?
 - Push notifications for study reminders?
 
 ### Content Licensing
