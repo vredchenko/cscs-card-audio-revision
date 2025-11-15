@@ -1,35 +1,150 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react';
+import { useApp } from './contexts/AppContext';
+import { loadRevisionContent, shuffleArray } from './utils/contentLoader';
+import { QuestionCard } from './components/QuestionCard';
+import { AnswerOptions } from './components/AnswerOptions';
+import { Feedback } from './components/Feedback';
+import { ScoreDisplay } from './components/ScoreDisplay';
+import { Settings } from './components/Settings';
+import type { Question } from './types';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { settings, recordAnswer } = useApp();
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
+  const [showFeedback, setShowFeedback] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Load and shuffle questions on mount
+  useEffect(() => {
+    async function loadQuestions() {
+      try {
+        setIsLoading(true);
+        const content = await loadRevisionContent();
+        const shuffled = shuffleArray(content.questions);
+        setQuestions(shuffled);
+        setIsLoading(false);
+      } catch (err) {
+        console.error('Failed to load questions:', err);
+        setError('Failed to load revision content. Please refresh the page.');
+        setIsLoading(false);
+      }
+    }
+
+    loadQuestions();
+  }, []);
+
+  const currentQuestion = questions[currentQuestionIndex];
+
+  const handleAnswerSelect = (answerIndex: number) => {
+    if (showFeedback) return;
+
+    setSelectedAnswer(answerIndex);
+    const isCorrect = answerIndex === currentQuestion.correctAnswerIndex;
+
+    // Record the answer
+    recordAnswer({
+      questionId: currentQuestion.id,
+      selectedAnswerIndex: answerIndex,
+      isCorrect,
+      timestamp: Date.now(),
+    });
+
+    // Show feedback
+    setShowFeedback(true);
+  };
+
+  const handleNext = () => {
+    setSelectedAnswer(null);
+    setShowFeedback(false);
+
+    // Move to next question or shuffle and restart
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    } else {
+      // Reshuffle questions for continuous practice
+      const shuffled = shuffleArray(questions);
+      setQuestions(shuffled);
+      setCurrentQuestionIndex(0);
+    }
+  };
+
+  if (isLoading) {
+    return (
+      <div className="app-loading">
+        <div className="spinner" aria-label="Loading questions" />
+        <p>Loading revision questions...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="app-error">
+        <h2>Error</h2>
+        <p>{error}</p>
+      </div>
+    );
+  }
+
+  if (!currentQuestion) {
+    return (
+      <div className="app-error">
+        <h2>No Questions Available</h2>
+        <p>No revision questions found. Please check the data files.</p>
+      </div>
+    );
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <div
+      className="app"
+      data-display-mode={settings.displayMode}
+      data-font-size={settings.fontSize}
+    >
+      <header className="app-header">
+        <h1>CSCS Revision</h1>
+        <Settings />
+      </header>
+
+      <main className="app-main container">
+        <ScoreDisplay />
+
+        <QuestionCard
+          question={currentQuestion}
+          questionNumber={currentQuestionIndex + 1}
+          totalQuestions={questions.length}
+        />
+
+        <AnswerOptions
+          answers={currentQuestion.answers}
+          selectedAnswer={selectedAnswer}
+          correctAnswer={showFeedback ? currentQuestion.correctAnswerIndex : null}
+          onSelect={handleAnswerSelect}
+          disabled={showFeedback}
+        />
+
+        {showFeedback && (
+          <Feedback
+            isCorrect={selectedAnswer === currentQuestion.correctAnswerIndex}
+            correctAnswer={currentQuestion.answers[currentQuestion.correctAnswerIndex]}
+            explanation={currentQuestion.explanation}
+            onNext={handleNext}
+          />
+        )}
+      </main>
+
+      <footer className="app-footer">
+        <p>CSCS Health & Safety Revision</p>
+        <p className="footer-note">
+          Practice questions for CSCS certification preparation
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
