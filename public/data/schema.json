@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CSCS Revision Content Schema",
+  "description": "Schema for CSCS revision questions and answers",
+  "type": "object",
+  "required": ["version", "metadata", "questions"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Schema version for future compatibility",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Overall content metadata",
+      "required": ["title", "description"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the question bank"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the content"
+        },
+        "categories": {
+          "type": "array",
+          "description": "List of available categories",
+          "items": {
+            "type": "string"
+          }
+        },
+        "author": {
+          "type": "string",
+          "description": "Content author/source"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date",
+          "description": "Last update date (YYYY-MM-DD)"
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "description": "Array of revision questions",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "question", "answers", "correctAnswerIndex"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique question identifier"
+          },
+          "question": {
+            "type": "string",
+            "description": "The question text"
+          },
+          "image": {
+            "type": "object",
+            "description": "Optional image associated with the question",
+            "properties": {
+              "url": {
+                "type": "string",
+                "description": "Image URL or path"
+              },
+              "alt": {
+                "type": "string",
+                "description": "Alt text for accessibility"
+              },
+              "caption": {
+                "type": "string",
+                "description": "Optional image caption"
+              }
+            },
+            "required": ["url", "alt"]
+          },
+          "answers": {
+            "type": "array",
+            "description": "Array of possible answers",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "description": "Answer text"
+            }
+          },
+          "correctAnswerIndex": {
+            "type": "integer",
+            "description": "Index of the correct answer (0-based)",
+            "minimum": 0
+          },
+          "explanation": {
+            "type": "string",
+            "description": "Optional explanation shown after answering"
+          },
+          "category": {
+            "type": "string",
+            "description": "Question category/topic"
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": ["easy", "medium", "hard"],
+            "description": "Optional difficulty level"
+          },
+          "tags": {
+            "type": "array",
+            "description": "Optional tags for filtering",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
