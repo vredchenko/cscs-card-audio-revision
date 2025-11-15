@@ -1,0 +1,114 @@
+.feedback {
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-lg);
+  border: 2px solid;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feedback-correct {
+  background-color: rgba(22, 163, 74, 0.1);
+  border-color: var(--success);
+}
+
+.feedback-incorrect {
+  background-color: rgba(220, 38, 38, 0.1);
+  border-color: var(--error);
+}
+
+.feedback-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.feedback-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.feedback-correct .feedback-icon {
+  background-color: var(--success);
+  color: white;
+}
+
+.feedback-incorrect .feedback-icon {
+  background-color: var(--error);
+  color: white;
+}
+
+.feedback-title {
+  flex: 1;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.feedback-correct .feedback-title {
+  color: var(--success);
+}
+
+.feedback-incorrect .feedback-title {
+  color: var(--error);
+}
+
+.feedback-content {
+  margin-bottom: var(--spacing-lg);
+}
+
+.correct-answer {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.correct-answer strong {
+  color: var(--error);
+}
+
+.explanation {
+  padding: var(--spacing-md);
+  background-color: var(--bg-secondary);
+  border-left: 4px solid var(--accent-primary);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  line-height: var(--line-height);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.btn-next {
+  width: 100%;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .feedback {
+    padding: var(--spacing-xl);
+  }
+
+  .btn-next {
+    width: auto;
+    min-width: 200px;
+  }
+}
