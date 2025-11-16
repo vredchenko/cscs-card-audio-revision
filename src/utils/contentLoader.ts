@@ -3,7 +3,7 @@ import type { RevisionContent } from '../types';
 /**
  * Load revision content from JSON file
  */
-export async function loadRevisionContent(path: string = '/data/sample-data.json'): Promise<RevisionContent> {
+export async function loadRevisionContent(path: string = '/data/cscs-questions.json'): Promise<RevisionContent> {
   try {
     const response = await fetch(path);
     if (!response.ok) {

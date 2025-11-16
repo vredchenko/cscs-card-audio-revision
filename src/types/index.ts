@@ -14,11 +14,13 @@ export interface Question {
   question: string;
   image?: QuestionImage;
   answers: string[];
-  correctAnswerIndex: number;
+  correctAnswerIndex?: number; // For single answer questions (backward compatible)
+  correctAnswerIndices?: number[]; // For multiple answer questions
   explanation?: string;
   category?: string;
   difficulty?: 'easy' | 'medium' | 'hard';
   tags?: string[];
+  multipleAnswers?: boolean; // Indicates if multiple answers are required
 }
 
 export interface ContentMetadata {
@@ -41,7 +43,8 @@ export interface RevisionContent {
 
 export interface UserAnswer {
   questionId: string;
-  selectedAnswerIndex: number;
+  selectedAnswerIndex?: number; // For single answer questions
+  selectedAnswerIndices?: number[]; // For multiple answer questions
   isCorrect: boolean;
   timestamp: number;
 }

@@ -4,10 +4,11 @@ import './AnswerOptions.css';
 
 interface AnswerOptionsProps {
   answers: string[];
-  selectedAnswer: number | null;
-  correctAnswer: number | null;
-  onSelect: (index: number) => void;
+  selectedAnswer: number | number[] | null;
+  correctAnswer: number | number[] | null;
+  onSelect: (index: number | number[]) => void;
   disabled?: boolean;
+  multipleAnswers?: boolean;
 }
 
 export function AnswerOptions({
@@ -16,6 +17,7 @@ export function AnswerOptions({
   correctAnswer,
   onSelect,
   disabled = false,
+  multipleAnswers = false,
 }: AnswerOptionsProps) {
   const { settings } = useApp();
   const { speak, isSpeaking, cancel } = useSpeech({
@@ -33,7 +35,16 @@ export function AnswerOptions({
       speak(answers[index]);
     }
 
-    onSelect(index);
+    if (multipleAnswers) {
+      // Toggle selection for multiple answer questions
+      const currentSelected = Array.isArray(selectedAnswer) ? selectedAnswer : [];
+      const newSelected = currentSelected.includes(index)
+        ? currentSelected.filter(i => i !== index)
+        : [...currentSelected, index];
+      onSelect(newSelected);
+    } else {
+      onSelect(index);
+    }
   };
 
   const handleSpeakAnswer = (answer: string, e: React.MouseEvent) => {
@@ -48,14 +59,20 @@ export function AnswerOptions({
   const getAnswerClassName = (index: number) => {
     const classes = ['answer-option'];
 
-    if (selectedAnswer === index) {
+    const isSelected = Array.isArray(selectedAnswer)
+      ? selectedAnswer.includes(index)
+      : selectedAnswer === index;
+
+    const correctAnswers = Array.isArray(correctAnswer) ? correctAnswer : [correctAnswer];
+
+    if (isSelected) {
       classes.push('selected');
     }
 
     if (correctAnswer !== null) {
-      if (index === correctAnswer) {
+      if (correctAnswers.includes(index)) {
         classes.push('correct');
-      } else if (index === selectedAnswer && index !== correctAnswer) {
+      } else if (isSelected && !correctAnswers.includes(index)) {
         classes.push('incorrect');
       }
     }
@@ -67,15 +84,29 @@ export function AnswerOptions({
     return classes.join(' ');
   };
 
+  const isSelected = (index: number) => {
+    return Array.isArray(selectedAnswer)
+      ? selectedAnswer.includes(index)
+      : selectedAnswer === index;
+  };
+
   return (
     <div className="answer-options">
+      {multipleAnswers && (
+        <div className="multiple-answers-hint">
+          <span className="hint-icon">ℹ️</span>
+          <span>Select all correct answers</span>
+        </div>
+      )}
       {answers.map((answer, index) => (
         <button
           key={index}
           className={getAnswerClassName(index)}
           onClick={() => handleAnswerClick(index)}
           disabled={disabled}
-          aria-pressed={selectedAnswer === index}
+          aria-pressed={isSelected(index)}
+          role={multipleAnswers ? 'checkbox' : 'radio'}
+          aria-checked={multipleAnswers ? isSelected(index) : undefined}
         >
           <span className="answer-letter">
             {String.fromCharCode(65 + index)}
