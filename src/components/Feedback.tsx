@@ -4,7 +4,7 @@ import './Feedback.css';
 
 interface FeedbackProps {
   isCorrect: boolean;
-  correctAnswer: string;
+  correctAnswer: string | string[];
   explanation?: string;
   onNext: () => void;
 }
@@ -21,9 +21,12 @@ export function Feedback({ isCorrect, correctAnswer, explanation, onNext }: Feed
     if (isSpeaking) {
       cancel();
     } else {
+      const correctAnswerText = Array.isArray(correctAnswer)
+        ? correctAnswer.join(', ')
+        : correctAnswer;
       const text = isCorrect
         ? 'Correct!'
-        : `Incorrect. The correct answer is: ${correctAnswer}${explanation ? `. ${explanation}` : ''}`;
+        : `Incorrect. The correct ${Array.isArray(correctAnswer) ? 'answers are' : 'answer is'}: ${correctAnswerText}${explanation ? `. ${explanation}` : ''}`;
       speak(text);
     }
   };
@@ -51,9 +54,18 @@ export function Feedback({ isCorrect, correctAnswer, explanation, onNext }: Feed
 
       {!isCorrect && (
         <div className="feedback-content">
-          <p className="correct-answer">
-            <strong>Correct answer:</strong> {correctAnswer}
-          </p>
+          <div className="correct-answer">
+            <strong>Correct {Array.isArray(correctAnswer) ? 'answers' : 'answer'}:</strong>
+            {Array.isArray(correctAnswer) ? (
+              <ul>
+                {correctAnswer.map((answer, index) => (
+                  <li key={index}>{answer}</li>
+                ))}
+              </ul>
+            ) : (
+              <span> {correctAnswer}</span>
+            )}
+          </div>
           {explanation && settings.showExplanations && (
             <p className="explanation">{explanation}</p>
           )}

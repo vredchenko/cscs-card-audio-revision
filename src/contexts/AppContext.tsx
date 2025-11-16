@@ -120,7 +120,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         questionId: answer.questionId,
         sessionId: currentSessionId,
         answeredAt: answer.timestamp,
-        selectedAnswerIndex: answer.selectedAnswerIndex,
+        selectedAnswerIndex: answer.selectedAnswerIndex ?? -1, // -1 for multiple answer questions
         correctAnswerIndex: -1, // Will be filled by caller
         isCorrect: answer.isCorrect,
         timeSpentMs: 0, // Can be enhanced later

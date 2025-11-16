@@ -47,7 +47,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["id", "question", "answers", "correctAnswerIndex"],
+        "required": ["id", "question", "answers"],
         "properties": {
           "id": {
             "type": "string",
@@ -87,8 +87,21 @@
           },
           "correctAnswerIndex": {
             "type": "integer",
-            "description": "Index of the correct answer (0-based)",
+            "description": "Index of the correct answer (0-based) - for single answer questions",
             "minimum": 0
+          },
+          "correctAnswerIndices": {
+            "type": "array",
+            "description": "Indices of correct answers (0-based) - for multiple answer questions",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 1
+          },
+          "multipleAnswers": {
+            "type": "boolean",
+            "description": "Indicates if multiple answers are required"
           },
           "explanation": {
             "type": "string",

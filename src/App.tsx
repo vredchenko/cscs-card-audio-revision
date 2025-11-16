@@ -15,7 +15,7 @@ function App() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [allQuestions, setAllQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<number | number[] | null>(null);
   const [showFeedback, setShowFeedback] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -45,21 +45,45 @@ function App() {
 
   const currentQuestion = questions[currentQuestionIndex];
 
-  const handleAnswerSelect = (answerIndex: number) => {
+  const handleAnswerSelect = (answerIndex: number | number[]) => {
     if (showFeedback) return;
 
+    // For multiple answer questions, just update selection state
+    if (currentQuestion.multipleAnswers) {
+      setSelectedAnswer(answerIndex);
+      return;
+    }
+
+    // For single answer questions, submit immediately
     setSelectedAnswer(answerIndex);
     const isCorrect = answerIndex === currentQuestion.correctAnswerIndex;
 
-    // Record the answer
     recordAnswer({
       questionId: currentQuestion.id,
-      selectedAnswerIndex: answerIndex,
+      selectedAnswerIndex: answerIndex as number,
       isCorrect,
       timestamp: Date.now(),
     });
 
-    // Show feedback
+    setShowFeedback(true);
+  };
+
+  const handleSubmitMultipleAnswers = () => {
+    if (!currentQuestion.multipleAnswers || showFeedback) return;
+
+    const selected = Array.isArray(selectedAnswer) ? selectedAnswer : [];
+    const correct = currentQuestion.correctAnswerIndices || [];
+
+    const isCorrect = selected.length === correct.length &&
+                      selected.every(i => correct.includes(i));
+
+    recordAnswer({
+      questionId: currentQuestion.id,
+      selectedAnswerIndices: selected,
+      isCorrect,
+      timestamp: Date.now(),
+    });
+
     setShowFeedback(true);
   };
 
@@ -129,15 +153,42 @@ function App() {
         <AnswerOptions
           answers={currentQuestion.answers}
           selectedAnswer={selectedAnswer}
-          correctAnswer={showFeedback ? currentQuestion.correctAnswerIndex : null}
+          correctAnswer={showFeedback
+            ? (currentQuestion.correctAnswerIndices || currentQuestion.correctAnswerIndex || null)
+            : null}
           onSelect={handleAnswerSelect}
           disabled={showFeedback}
+          multipleAnswers={currentQuestion.multipleAnswers}
         />
+
+        {currentQuestion.multipleAnswers && !showFeedback && (
+          <div className="submit-container">
+            <button
+              className="btn-submit"
+              onClick={handleSubmitMultipleAnswers}
+              disabled={!selectedAnswer || (Array.isArray(selectedAnswer) && selectedAnswer.length === 0)}
+            >
+              Submit Answer
+            </button>
+          </div>
+        )}
 
         {showFeedback && (
           <Feedback
-            isCorrect={selectedAnswer === currentQuestion.correctAnswerIndex}
-            correctAnswer={currentQuestion.answers[currentQuestion.correctAnswerIndex]}
+            isCorrect={(() => {
+              if (currentQuestion.multipleAnswers && currentQuestion.correctAnswerIndices) {
+                const selected = Array.isArray(selectedAnswer) ? selectedAnswer : [];
+                const correct = currentQuestion.correctAnswerIndices;
+                return selected.length === correct.length &&
+                       selected.every(i => correct.includes(i));
+              }
+              return selectedAnswer === currentQuestion.correctAnswerIndex;
+            })()}
+            correctAnswer={
+              currentQuestion.multipleAnswers && currentQuestion.correctAnswerIndices
+                ? currentQuestion.correctAnswerIndices.map(i => currentQuestion.answers[i])
+                : currentQuestion.answers[currentQuestion.correctAnswerIndex!]
+            }
             explanation={currentQuestion.explanation}
             onNext={handleNext}
           />

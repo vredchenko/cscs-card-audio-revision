@@ -1,0 +1,1169 @@
+{
+  "version": "1.0.0",
+  "metadata": {
+    "title": "CSCS Health & Safety Revision Questions",
+    "description": "Comprehensive question bank for CSCS certification exam covering health and safety on UK building sites",
+    "categories": [
+      "General Safety",
+      "PPE (Personal Protective Equipment)",
+      "Manual Handling",
+      "Working at Height",
+      "Electrical Safety",
+      "Fire Safety",
+      "Hazardous Substances",
+      "First Aid",
+      "Environmental Protection",
+      "Mental Health",
+      "Safety Signs"
+    ],
+    "author": "Practice Content - Sourced from publicly available CSCS practice tests",
+    "lastUpdated": "2025-11-16"
+  },
+  "questions": [
+    {
+      "id": "cscs001",
+      "question": "Which type of fire extinguisher is suitable for electrical fires?",
+      "answers": [
+        "Water",
+        "Foam",
+        "CO2",
+        "Wet chemical"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "CO2 extinguishers are safe for electrical fires because CO2 is non-conductive and leaves no residue. Never use water on electrical fires.",
+      "category": "Fire Safety",
+      "difficulty": "easy",
+      "tags": ["fire-extinguishers", "electrical", "safety-equipment"]
+    },
+    {
+      "id": "cscs002",
+      "question": "When should you replace your PPE?",
+      "answers": [
+        "After one month of use",
+        "Only if your supervisor says so",
+        "When it becomes dirty",
+        "When it is damaged or no longer fits properly"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "PPE must be replaced when damaged, worn, or doesn't fit properly to ensure it provides adequate protection.",
+      "category": "PPE (Personal Protective Equipment)",
+      "difficulty": "easy",
+      "tags": ["ppe", "maintenance", "replacement"]
+    },
+    {
+      "id": "cscs003",
+      "question": "What is the safe distance to work below live overhead power lines rated at 11 kV?",
+      "answers": [
+        "1 metre",
+        "3 metres",
+        "6 metres",
+        "15 metres"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "For overhead power lines up to 11 kV, maintain a minimum safe distance of 3 metres to prevent electric shock.",
+      "category": "Electrical Safety",
+      "difficulty": "medium",
+      "tags": ["electrical", "power-lines", "safe-distance"]
+    },
+    {
+      "id": "cscs004",
+      "question": "What does a blue mandatory safety sign indicate?",
+      "answers": [
+        "An action you must do",
+        "A warning of danger",
+        "An emergency escape route",
+        "Fire fighting equipment location"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Blue circular signs with white pictograms indicate mandatory actions that must be followed, such as wearing PPE.",
+      "category": "Safety Signs",
+      "difficulty": "easy",
+      "tags": ["signage", "safety-signs", "mandatory"]
+    },
+    {
+      "id": "cscs005",
+      "question": "Which combination provides the highest level of hearing protection?",
+      "answers": [
+        "Standard earplugs only",
+        "Standard earmuffs only",
+        "Semi-insert ear protection",
+        "Combined earplugs and earmuffs together"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Using both earplugs and earmuffs together provides the maximum hearing protection in very noisy environments.",
+      "category": "PPE (Personal Protective Equipment)",
+      "difficulty": "medium",
+      "tags": ["ppe", "hearing-protection", "noise"]
+    },
+    {
+      "id": "cscs006",
+      "question": "What is the main purpose of site inductions?",
+      "answers": [
+        "To explain site-specific risks and rules",
+        "To give out free PPE",
+        "Required only for new starters",
+        "To replace toolbox talks"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Site inductions inform all workers about site-specific hazards, emergency procedures, and safety rules before starting work.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["induction", "safety-rules", "site-safety"]
+    },
+    {
+      "id": "cscs007",
+      "question": "What should you do if you find an unconscious person who is still breathing?",
+      "answers": [
+        "Begin chest compressions immediately",
+        "Place them in the recovery position and call for help",
+        "Give them water to drink",
+        "Move them to a warmer area first"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "If someone is unconscious but breathing, place them in the recovery position to keep their airway clear and call for emergency help immediately.",
+      "category": "First Aid",
+      "difficulty": "medium",
+      "tags": ["first-aid", "emergency", "recovery-position"]
+    },
+    {
+      "id": "cscs008",
+      "question": "What document must be in place before lifting operations with a crane?",
+      "answers": [
+        "Fire risk assessment",
+        "Site induction booklet",
+        "Lifting plan or method statement",
+        "Company health and safety policy"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "All lifting operations must have a lifting plan or method statement detailing safe procedures under LOLER regulations.",
+      "category": "Working at Height",
+      "difficulty": "medium",
+      "tags": ["lifting", "crane", "loler", "planning"]
+    },
+    {
+      "id": "cscs009",
+      "question": "Which substance causes the lung disease silicosis?",
+      "answers": [
+        "Respirable crystalline silica (RCS) dust",
+        "Carbon monoxide gas",
+        "Asbestos fibres",
+        "Lead fumes"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Silicosis is a serious lung disease caused by breathing in respirable crystalline silica dust, commonly from cutting, grinding or drilling concrete, stone or brick.",
+      "category": "Hazardous Substances",
+      "difficulty": "medium",
+      "tags": ["dust", "silica", "lung-disease", "occupational-health"]
+    },
+    {
+      "id": "cscs010",
+      "question": "What should you do if you find a damaged ladder?",
+      "answers": [
+        "Use it carefully if you need to",
+        "Repair it with tape",
+        "Tag it 'Do Not Use' and report it to your supervisor",
+        "Move up one rung to avoid the damage"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Damaged equipment must be taken out of service immediately, clearly marked, and reported to prevent anyone using it.",
+      "category": "Working at Height",
+      "difficulty": "easy",
+      "tags": ["ladders", "damaged-equipment", "reporting"]
+    },
+    {
+      "id": "cscs011",
+      "question": "How often should you visually inspect portable electrical tools before use?",
+      "answers": [
+        "Once a month",
+        "Every six months",
+        "Only when the tool fails a test",
+        "Before every use by the operator"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Operators must visually inspect electrical tools before each use to check for damage to cables, plugs and the tool itself.",
+      "category": "Electrical Safety",
+      "difficulty": "easy",
+      "tags": ["electrical", "tools", "inspection", "pre-use-checks"]
+    },
+    {
+      "id": "cscs012",
+      "question": "Which type of hard hat provides the LEAST protection from side impacts?",
+      "answers": [
+        "Class A hard hat",
+        "Bump cap",
+        "Class E hard hat",
+        "Class C hard hat"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Bump caps only protect against minor bumps and have no side impact protection. They are not suitable for construction sites.",
+      "category": "PPE (Personal Protective Equipment)",
+      "difficulty": "medium",
+      "tags": ["ppe", "head-protection", "hard-hats"]
+    },
+    {
+      "id": "cscs013",
+      "question": "What is the best way to control dust on a demolition site?",
+      "answers": [
+        "Water suppression at source",
+        "Provide paper dust masks",
+        "Erect high-level fencing",
+        "Install wind breaks"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Water suppression at the source of dust is the most effective control method, preventing dust from becoming airborne in the first place.",
+      "category": "Hazardous Substances",
+      "difficulty": "medium",
+      "tags": ["dust-control", "water-suppression", "demolition"]
+    },
+    {
+      "id": "cscs014",
+      "question": "Who is responsible for ensuring lifting gear is examined and certified?",
+      "answers": [
+        "The site labourer using it",
+        "The building inspector",
+        "The duty-holder or employer",
+        "Only the equipment hire company"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The duty-holder (usually the employer) is legally responsible for ensuring all lifting equipment is examined by a competent person and properly certified.",
+      "category": "Working at Height",
+      "difficulty": "medium",
+      "tags": ["lifting-gear", "responsibility", "loler"]
+    },
+    {
+      "id": "cscs015",
+      "question": "Which part of the body does HAVS (Hand-Arm Vibration Syndrome) affect?",
+      "answers": [
+        "The back and spine",
+        "The hips and pelvis",
+        "The knees",
+        "The fingers and hands"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "HAVS damages blood vessels, nerves and joints in the fingers, hands and arms, caused by regular use of vibrating tools.",
+      "category": "Hazardous Substances",
+      "difficulty": "easy",
+      "tags": ["havs", "vibration", "occupational-health"]
+    },
+    {
+      "id": "cscs016",
+      "question": "What does red and white striped barrier tape indicate?",
+      "answers": [
+        "A safe walkway for pedestrians",
+        "A hazard that you must not cross",
+        "Fire assembly point location",
+        "Storage area boundary"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Red and white striped tape marks a hazard or danger zone that must not be crossed without authorization.",
+      "category": "Safety Signs",
+      "difficulty": "easy",
+      "tags": ["barriers", "hazard-zones", "signage"]
+    },
+    {
+      "id": "cscs017",
+      "question": "How should flammable liquids be stored on site?",
+      "answers": [
+        "In any dry area away from rain",
+        "In open containers outside",
+        "In a locked, ventilated, fire-resistant cabinet",
+        "Next to the generator for convenience"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Flammable liquids must be stored in secure, fire-resistant, ventilated cabinets away from ignition sources.",
+      "category": "Fire Safety",
+      "difficulty": "medium",
+      "tags": ["flammable-liquids", "storage", "fire-prevention"]
+    },
+    {
+      "id": "cscs018",
+      "question": "Which regulations cover lifting operations and lifting equipment?",
+      "answers": [
+        "LOLER 1998",
+        "CDM 2015",
+        "PUWER 1998",
+        "RIDDOR 2013"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "LOLER (Lifting Operations and Lifting Equipment Regulations) 1998 covers the safe use of lifting equipment and operations.",
+      "category": "Working at Height",
+      "difficulty": "medium",
+      "tags": ["loler", "regulations", "legislation"]
+    },
+    {
+      "id": "cscs019",
+      "question": "What is the FIRST step in the hierarchy of risk control measures?",
+      "answers": [
+        "Provide PPE",
+        "Use administrative controls",
+        "Install engineering controls",
+        "Eliminate the hazard completely"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "The hierarchy of control starts with elimination - removing the hazard entirely is always the most effective control measure.",
+      "category": "General Safety",
+      "difficulty": "medium",
+      "tags": ["risk-control", "hierarchy", "hazard-elimination"]
+    },
+    {
+      "id": "cscs020",
+      "question": "Why is it important to inspect welfare facilities under CDM 2015?",
+      "answers": [
+        "To keep costs down",
+        "To ensure toilets, washing and rest areas meet legal standards",
+        "To impress visitors",
+        "It's optional good practice"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "CDM 2015 requires welfare facilities to meet legal minimum standards for workers' health, hygiene and wellbeing.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["cdm", "welfare", "regulations"]
+    },
+    {
+      "id": "cscs021",
+      "question": "When does your employer need to provide a first-aid box?",
+      "answers": [
+        "When total employees exceed 10",
+        "When total employees exceed 35",
+        "Every site should have one regardless of employee count",
+        "First-aid boxes are optional"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "All workplaces must have adequate first-aid provisions regardless of the number of employees.",
+      "category": "First Aid",
+      "difficulty": "easy",
+      "tags": ["first-aid", "requirements", "welfare"]
+    },
+    {
+      "id": "cscs022",
+      "question": "What is the purpose of protective mid-soles in safety footwear?",
+      "answers": [
+        "To increase comfort throughout the day",
+        "To support ankles and prevent twisting",
+        "To protect feet from falling objects",
+        "To protect feet from stepping on sharp objects like nails"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Protective mid-soles prevent sharp objects like nails from penetrating through the sole of the boot.",
+      "category": "PPE (Personal Protective Equipment)",
+      "difficulty": "easy",
+      "tags": ["ppe", "footwear", "foot-protection"]
+    },
+    {
+      "id": "cscs023",
+      "question": "Why are site inductions important?",
+      "answers": [
+        "Work site health and safety rules are discussed",
+        "It's an opportunity to meet colleagues formally",
+        "It allows you to look around the work site",
+        "It's a chance to meet the site manager and supervisors"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Site inductions are crucial for communicating site-specific hazards, emergency procedures, and safety rules before work begins.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["induction", "safety-rules"]
+    },
+    {
+      "id": "cscs024",
+      "question": "Class 3 ladders are suitable for what type of use?",
+      "answers": [
+        "Heavy duty and industrial purposes",
+        "Domestic use only",
+        "Both industrial and domestic purposes",
+        "Building site purposes"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Class 3 ladders are designed for light domestic use only and should never be used on construction sites.",
+      "category": "Working at Height",
+      "difficulty": "medium",
+      "tags": ["ladders", "classification", "equipment"]
+    },
+    {
+      "id": "cscs025",
+      "question": "When working in a hearing protection zone you must:",
+      "answers": [
+        "Be as quiet as possible",
+        "Not use loud equipment or machinery",
+        "Ensure you wear appropriate hearing protection",
+        "Work as fast as possible and leave to reduce exposure"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Hearing protection zones require all workers to wear appropriate hearing protection due to high noise levels.",
+      "category": "PPE (Personal Protective Equipment)",
+      "difficulty": "easy",
+      "tags": ["ppe", "hearing-protection", "noise-zones"]
+    },
+    {
+      "id": "cscs026",
+      "question": "What should you do if you notice a safety hazard?",
+      "answers": [
+        "Stay away from that area",
+        "Report it to your supervisor immediately",
+        "Keep working and report it at the end of your shift",
+        "Report it to colleagues only"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Safety hazards must be reported to your supervisor immediately to prevent accidents and injuries.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["hazard-reporting", "responsibility"]
+    },
+    {
+      "id": "cscs027",
+      "question": "Why is signing in important when arriving on site?",
+      "answers": [
+        "To ensure correct working hours are recorded",
+        "To ensure everyone can be accounted for during an evacuation",
+        "The HSE needs records of working hours",
+        "Signing in is optional"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Site sign-in systems are crucial for emergency roll calls and ensuring everyone is accounted for during evacuations.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["sign-in", "emergency-procedures", "evacuation"]
+    },
+    {
+      "id": "cscs028",
+      "question": "Which fire extinguishers are suitable for electrical fires? (Choose 2 answers)",
+      "answers": [
+        "CO2",
+        "Dry powder",
+        "Water",
+        "Foam"
+      ],
+      "multipleAnswers": true,
+      "correctAnswerIndices": [0, 1],
+      "explanation": "Both CO2 and dry powder extinguishers are safe for electrical fires as they are non-conductive. Never use water or foam on electrical fires.",
+      "category": "Fire Safety",
+      "difficulty": "medium",
+      "tags": ["fire-extinguishers", "electrical", "multiple-answer"]
+    },
+    {
+      "id": "cscs029",
+      "question": "What could happen if you ignore warning signs regarding toxic substances?",
+      "answers": [
+        "Increased fitness levels",
+        "Decreased fitness levels",
+        "Poor health and serious illness",
+        "Improved health"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Ignoring warnings about toxic substances can lead to serious health problems including poisoning, organ damage, and chronic illness.",
+      "category": "Hazardous Substances",
+      "difficulty": "easy",
+      "tags": ["toxic-substances", "health-effects", "warnings"]
+    },
+    {
+      "id": "cscs030",
+      "question": "When working with hazardous substances, what should employers check regularly?",
+      "answers": [
+        "Your mood",
+        "Your working technique",
+        "Your skills",
+        "Your health"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Employers must monitor workers' health through health surveillance when exposed to hazardous substances to detect early signs of harm.",
+      "category": "Hazardous Substances",
+      "difficulty": "medium",
+      "tags": ["health-surveillance", "coshh", "monitoring"]
+    },
+    {
+      "id": "cscs031",
+      "question": "Which exposure is NOT likely to cause lung disease?",
+      "answers": [
+        "Silica dust",
+        "Asbestos fibres",
+        "Strong smells",
+        "Bird droppings"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "While unpleasant, strong smells alone don't cause lung disease. Silica, asbestos, and organic matter from bird droppings can all cause serious lung conditions.",
+      "category": "Hazardous Substances",
+      "difficulty": "medium",
+      "tags": ["lung-disease", "respiratory", "health-hazards"]
+    },
+    {
+      "id": "cscs032",
+      "question": "Environmental protection at work involves:",
+      "answers": [
+        "Arriving on time daily",
+        "Following health and safety rules",
+        "Reducing water and energy usage whenever possible",
+        "Wearing PPE at all times"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Environmental protection includes conserving resources like water and energy, minimizing waste, and preventing pollution.",
+      "category": "Environmental Protection",
+      "difficulty": "easy",
+      "tags": ["environment", "sustainability", "conservation"]
+    },
+    {
+      "id": "cscs033",
+      "question": "How can fatigue affect a worker's output?",
+      "answers": [
+        "It can decrease their work output due to tiredness",
+        "It has no effect on productivity",
+        "It increases work output"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Fatigue reduces concentration, reaction times, and work quality, increasing the risk of accidents and decreasing productivity.",
+      "category": "Mental Health",
+      "difficulty": "easy",
+      "tags": ["fatigue", "wellbeing", "productivity"]
+    },
+    {
+      "id": "cscs034",
+      "question": "When a mobile crane is operating nearby, you should:",
+      "answers": [
+        "Run quickly across its path",
+        "Raise your hands to signal the operator",
+        "Assess the situation and slip across when safe",
+        "Find another route and stay away from the crane"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Always maintain a safe distance from operating cranes and find alternative routes to avoid the danger zone.",
+      "category": "Working at Height",
+      "difficulty": "easy",
+      "tags": ["cranes", "mobile-plant", "safe-working"]
+    },
+    {
+      "id": "cscs035",
+      "question": "If you notice a lorry with a flat tyre, you should tell the driver because:",
+      "answers": [
+        "They will need to drive slower",
+        "It uses more fuel",
+        "The lorry could be unsafe to drive",
+        "They need to unload materials first"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "A flat tyre makes a vehicle unstable and unsafe to drive, potentially causing loss of control and serious accidents.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["vehicles", "defects", "reporting"]
+    },
+    {
+      "id": "cscs036",
+      "question": "If diesel spills while refueling equipment, you should:",
+      "answers": [
+        "Locate the spill kit and then report it",
+        "Do nothing as it will seep away naturally",
+        "Inform your supervisor immediately and then find the spill kit",
+        "Report it at the start of the next shift"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Fuel spills are environmental hazards and fire risks. Report immediately and use spill kits to contain and clean up the spillage.",
+      "category": "Environmental Protection",
+      "difficulty": "medium",
+      "tags": ["spills", "fuel", "emergency-response"]
+    },
+    {
+      "id": "cscs037",
+      "question": "If safety induction information seems outdated, you should:",
+      "answers": [
+        "Ask colleagues for their suggestions",
+        "Implement your own safety rules",
+        "Talk to your supervisor about the matter",
+        "Do nothing and continue as normal"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Outdated safety information can be dangerous. Report concerns to your supervisor so procedures can be reviewed and updated.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["induction", "procedures", "reporting"]
+    },
+    {
+      "id": "cscs038",
+      "question": "What is the main danger of walking beside a 360° crane operating near a wall?",
+      "answers": [
+        "The crane could hit the wall and debris could fall",
+        "You could distract the operator",
+        "Risk of hearing damage",
+        "The crane could crush you against the wall"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "360° cranes can swing unexpectedly and trap or crush people against walls or other solid objects. Always maintain safe clearance.",
+      "category": "Working at Height",
+      "difficulty": "medium",
+      "tags": ["cranes", "crushing", "safe-distance"]
+    },
+    {
+      "id": "cscs039",
+      "question": "Which voltage can cause severe injury or death through electric shock?",
+      "answers": [
+        "110 volts only",
+        "220 volts only",
+        "480 volts only",
+        "All of the listed voltages can cause death"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Any voltage can be lethal. Even 110V can kill under the right conditions. Always treat all electrical systems as potentially dangerous.",
+      "category": "Electrical Safety",
+      "difficulty": "easy",
+      "tags": ["electrical", "voltage", "fatal-risks"]
+    },
+    {
+      "id": "cscs040",
+      "question": "Which are recommended methods of hearing protection? (Choose 2 answers)",
+      "answers": [
+        "Soft cloth over ears",
+        "Rolled up tissue paper",
+        "Ear defenders",
+        "Disposable earplugs",
+        "Cotton wool pads"
+      ],
+      "multipleAnswers": true,
+      "correctAnswerIndices": [2, 3],
+      "explanation": "Only purpose-designed ear defenders (earmuffs) and disposable earplugs provide effective hearing protection. Improvised materials are ineffective.",
+      "category": "PPE (Personal Protective Equipment)",
+      "difficulty": "easy",
+      "tags": ["ppe", "hearing-protection", "multiple-answer"]
+    },
+    {
+      "id": "cscs041",
+      "question": "If a load might fall from a vehicle, you should:",
+      "answers": [
+        "Ignore it as it's the driver's responsibility",
+        "Stay away from the vehicle and warn the driver and others",
+        "Try to hold the load in place",
+        "Find your supervisor first"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Unsafe loads are an immediate danger. Keep clear, warn others, and alert the driver immediately.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["loading", "vehicles", "falling-objects"]
+    },
+    {
+      "id": "cscs042",
+      "question": "Blue-banded fire extinguishers contain:",
+      "answers": [
+        "Carbon dioxide",
+        "Dry powder",
+        "Water",
+        "Foam"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Blue label indicates dry powder extinguishers, which are suitable for most fire types including electrical fires.",
+      "category": "Fire Safety",
+      "difficulty": "medium",
+      "tags": ["fire-extinguishers", "identification", "color-coding"]
+    },
+    {
+      "id": "cscs043",
+      "question": "What do risk assessments identify?",
+      "answers": [
+        "Your salary level",
+        "Hazards within your workplace",
+        "Your working hours",
+        "Your holiday entitlement"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Risk assessments identify workplace hazards and evaluate risks to determine necessary control measures.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["risk-assessment", "hazards"]
+    },
+    {
+      "id": "cscs044",
+      "question": "Before manually carrying a load, you should consider:",
+      "answers": [
+        "The distance you need to travel",
+        "Whether the path is clear and free from hazards",
+        "The weight and dimensions of the load",
+        "All of these factors"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Manual handling assessments must consider the task, the load, the environment, and individual capability.",
+      "category": "Manual Handling",
+      "difficulty": "easy",
+      "tags": ["manual-handling", "assessment", "planning"]
+    },
+    {
+      "id": "cscs045",
+      "question": "Besides CO2, which other fire extinguisher is suitable for electrical fires?",
+      "answers": [
+        "Water",
+        "Wet chemical",
+        "Dry powder",
+        "Foam"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Dry powder extinguishers are non-conductive and safe for electrical fires along with CO2 extinguishers.",
+      "category": "Fire Safety",
+      "difficulty": "medium",
+      "tags": ["fire-extinguishers", "electrical"]
+    },
+    {
+      "id": "cscs046",
+      "question": "What does the MIND charity do?",
+      "answers": [
+        "Creates workplace safety legislation",
+        "Provides financial aid for construction workers",
+        "Provides mental health support and advice",
+        "Provides legal advice for workers"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "MIND is a mental health charity that provides support, advice, and resources for people dealing with mental health issues.",
+      "category": "Mental Health",
+      "difficulty": "easy",
+      "tags": ["mental-health", "support", "wellbeing"]
+    },
+    {
+      "id": "cscs047",
+      "question": "What do green safety signs signify?",
+      "answers": [
+        "Safe conditions or emergency exits",
+        "Fire alarm call points",
+        "An action that employees must take",
+        "A hazard or danger"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Green signs indicate safe conditions, emergency exits, escape routes, and first aid facilities.",
+      "category": "Safety Signs",
+      "difficulty": "easy",
+      "tags": ["signage", "emergency", "safe-conditions"]
+    },
+    {
+      "id": "cscs048",
+      "question": "If there is a large fire on site and you have not been trained to use fire extinguishers, you should:",
+      "answers": [
+        "Try using an extinguisher anyway",
+        "Ask your supervisor for instructions",
+        "Leave the site and go home",
+        "Go to your assembly point immediately"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "In a large fire, evacuate immediately and go to the assembly point. Only fight small fires if trained and it's safe to do so.",
+      "category": "Fire Safety",
+      "difficulty": "easy",
+      "tags": ["fire", "evacuation", "emergency"]
+    },
+    {
+      "id": "cscs049",
+      "question": "If you discover a better method for lifting loads, you should:",
+      "answers": [
+        "Ask colleagues if they agree with your idea",
+        "Forget about it and continue as normal",
+        "Discuss your idea with your supervisor",
+        "Ignore the current method and use your own"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "New methods must be discussed with supervisors and risk assessed before implementation to ensure they are safe.",
+      "category": "Manual Handling",
+      "difficulty": "easy",
+      "tags": ["improvement", "procedures", "communication"]
+    },
+    {
+      "id": "cscs050",
+      "question": "Clean work environments help prevent:",
+      "answers": [
+        "Rodent infestation",
+        "Slips, trips and falls",
+        "Environmental damage",
+        "All of the above"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Good housekeeping prevents multiple hazards including pest problems, slip and trip hazards, and environmental contamination.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["housekeeping", "cleanliness", "prevention"]
+    },
+    {
+      "id": "cscs051",
+      "question": "If you are feeling symptoms of work-related stress, you should:",
+      "answers": [
+        "Eat more food during the day",
+        "Speak to someone independent or a close friend you trust",
+        "Tell all your colleagues about it",
+        "Leave work and go home immediately"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Talking to someone you trust or seeking independent advice is important for managing work-related stress and mental health.",
+      "category": "Mental Health",
+      "difficulty": "medium",
+      "tags": ["stress", "mental-health", "wellbeing", "support"]
+    },
+    {
+      "id": "cscs052",
+      "question": "If a power tool is missing its guard, you should:",
+      "answers": [
+        "Not use the tool until it has been fitted with a proper guard",
+        "Wear thick gloves and continue using it",
+        "Make your own guard from scrap material",
+        "Use it only for short bursts"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Guards are essential safety features. Never use power tools with missing or damaged guards - report and remove from service.",
+      "category": "Electrical Safety",
+      "difficulty": "easy",
+      "tags": ["power-tools", "guards", "safety-equipment"]
+    },
+    {
+      "id": "cscs053",
+      "question": "Red-banded fire extinguishers contain:",
+      "answers": [
+        "Foam",
+        "Water",
+        "Dry powder",
+        "Carbon dioxide"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Red labels indicate water extinguishers, suitable for wood, paper, and fabric fires but never for electrical fires.",
+      "category": "Fire Safety",
+      "difficulty": "medium",
+      "tags": ["fire-extinguishers", "identification", "color-coding"]
+    },
+    {
+      "id": "cscs054",
+      "question": "What is a 'near miss'?",
+      "answers": [
+        "A minor accident that doesn't need reporting",
+        "An accident that results in time off work",
+        "A minor accident that could have been prevented",
+        "An accident which was narrowly avoided"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "A near miss is an unplanned event that could have resulted in injury or damage but didn't. Reporting near misses helps prevent future accidents.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["near-miss", "reporting", "prevention"]
+    },
+    {
+      "id": "cscs055",
+      "question": "Before operating site plant or machinery, you must be: (Choose 2 answers)",
+      "answers": [
+        "A British citizen",
+        "At least 25 years old",
+        "Authorised to operate it",
+        "Trained and competent"
+      ],
+      "multipleAnswers": true,
+      "correctAnswerIndices": [2, 3],
+      "explanation": "You must be both trained/competent and specifically authorized to operate plant and machinery on construction sites.",
+      "category": "General Safety",
+      "difficulty": "medium",
+      "tags": ["plant", "machinery", "competence", "authorization", "multiple-answer"]
+    },
+    {
+      "id": "cscs056",
+      "question": "What happens to the nozzle of a CO2 fire extinguisher when in use?",
+      "answers": [
+        "It becomes very cold",
+        "It becomes slightly hot",
+        "It becomes very hot",
+        "It stays at room temperature"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "CO2 extinguisher nozzles become extremely cold due to the rapid expansion of compressed gas. Never touch the horn directly.",
+      "category": "Fire Safety",
+      "difficulty": "medium",
+      "tags": ["fire-extinguishers", "co2", "safety"]
+    },
+    {
+      "id": "cscs057",
+      "question": "What health condition can result from regular use of vibrating tools?",
+      "answers": [
+        "Dermatitis",
+        "Lung cancer",
+        "Heart disease",
+        "Hand-arm vibration syndrome (HAVS)"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Regular exposure to vibration from power tools causes HAVS, damaging blood vessels, nerves, and joints in hands and arms.",
+      "category": "Hazardous Substances",
+      "difficulty": "easy",
+      "tags": ["havs", "vibration", "occupational-health"]
+    },
+    {
+      "id": "cscs058",
+      "question": "What health risk comes from wet cement contact with skin?",
+      "answers": [
+        "Temporary hair loss",
+        "Chemical burns and dermatitis",
+        "Internal bleeding",
+        "No health effects"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Wet cement is highly alkaline and can cause severe chemical burns, skin irritation, and dermatitis. Always wear protective gloves.",
+      "category": "Hazardous Substances",
+      "difficulty": "medium",
+      "tags": ["cement", "chemical-burns", "dermatitis", "skin-protection"]
+    },
+    {
+      "id": "cscs059",
+      "question": "Which item does NOT need a PAT (Portable Appliance Test)?",
+      "answers": [
+        "A battery-operated drill",
+        "A television",
+        "A plug-in battery charger",
+        "A coffee machine"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Battery-operated equipment doesn't need PAT testing as it doesn't connect to mains electricity. Only mains-powered appliances require PAT testing.",
+      "category": "Electrical Safety",
+      "difficulty": "medium",
+      "tags": ["pat-testing", "electrical", "equipment"]
+    },
+    {
+      "id": "cscs060",
+      "question": "What does PAT stand for?",
+      "answers": [
+        "Professional Aptitude Test",
+        "Portable Appliance Test",
+        "Portable Application Test",
+        "Professional Appliance Test"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "PAT stands for Portable Appliance Test, the safety testing of electrical appliances to prevent electric shock and fire.",
+      "category": "Electrical Safety",
+      "difficulty": "easy",
+      "tags": ["pat-testing", "electrical", "terminology"]
+    },
+    {
+      "id": "cscs061",
+      "question": "If a co-worker is feeling dizzy and faint, you should:",
+      "answers": [
+        "Have them lie down in a comfortable position",
+        "Move them to a cooler environment immediately",
+        "Contact emergency services first",
+        "Give them appropriate medication"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Help them lie down comfortably to prevent falling and injury. Monitor them closely and call for help if they don't recover quickly.",
+      "category": "First Aid",
+      "difficulty": "medium",
+      "tags": ["first-aid", "fainting", "emergency-response"]
+    },
+    {
+      "id": "cscs062",
+      "question": "Why is an RCD used with 230-volt electrical tools?",
+      "answers": [
+        "It makes the tool more energy efficient",
+        "It lowers the voltage to a safer level",
+        "It makes the tool run faster",
+        "It quickly cuts off power if a fault is detected"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "RCDs (Residual Current Devices) detect electrical faults and cut power within milliseconds, preventing fatal electric shocks.",
+      "category": "Electrical Safety",
+      "difficulty": "medium",
+      "tags": ["rcd", "electrical", "safety-devices"]
+    },
+    {
+      "id": "cscs063",
+      "question": "Why should you never walk behind a reversing lorry?",
+      "answers": [
+        "Drivers find reversing difficult",
+        "Lorries lack rear mirrors",
+        "The driver might not see you there",
+        "It could delay the work"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Despite mirrors and cameras, drivers have blind spots. Never walk behind reversing vehicles - you could be crushed.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["vehicles", "reversing", "blind-spots"]
+    },
+    {
+      "id": "cscs064",
+      "question": "If you need specific RPE (Respiratory Protective Equipment) but none is provided, you should:",
+      "answers": [
+        "Use whatever RPE is available instead",
+        "Do not start work until you have the correct RPE",
+        "Work but take regular breaks for fresh air",
+        "Work quickly to finish as soon as possible"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Never start work without the specified RPE. Different hazards require specific protection - using wrong RPE provides no protection.",
+      "category": "PPE (Personal Protective Equipment)",
+      "difficulty": "medium",
+      "tags": ["rpe", "respiratory-protection", "ppe"]
+    },
+    {
+      "id": "cscs065",
+      "question": "What is the best method to minimize dust on site?",
+      "answers": [
+        "Dampen the work area with water spray",
+        "Cover the entire work site with sheets",
+        "Use only power tools",
+        "Ensure everyone wears proper RPE"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Water suppression at source is the most effective dust control - preventing dust from becoming airborne in the first place.",
+      "category": "Hazardous Substances",
+      "difficulty": "medium",
+      "tags": ["dust-control", "water-suppression", "prevention"]
+    },
+    {
+      "id": "cscs066",
+      "question": "What is an advantage of battery-powered tools over electrical tools?",
+      "answers": [
+        "They are more powerful",
+        "They have cheaper maintenance",
+        "They are safer to use",
+        "They produce less noise"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Battery tools eliminate electric shock risks and trailing cables, making them safer especially in wet conditions or confined spaces.",
+      "category": "Electrical Safety",
+      "difficulty": "medium",
+      "tags": ["battery-tools", "electrical", "tool-safety"]
+    },
+    {
+      "id": "cscs067",
+      "question": "What do blue and white safety signs indicate?",
+      "answers": [
+        "A hazard is present",
+        "A restricted zone",
+        "A specific task is prohibited",
+        "An action is mandatory"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Blue circular signs with white symbols indicate mandatory actions that must be followed, such as wearing specific PPE.",
+      "category": "Safety Signs",
+      "difficulty": "easy",
+      "tags": ["signage", "mandatory", "safety-signs"]
+    },
+    {
+      "id": "cscs068",
+      "question": "If you have a previous back injury that might affect your current work, you should:",
+      "answers": [
+        "Explain the situation to your supervisor before starting the job",
+        "Continue working and only report it if you feel pain",
+        "Wear a back support brace and continue",
+        "Ignore the problem as it's in the past"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Inform your supervisor of pre-existing conditions before starting work so appropriate adjustments or alternative tasks can be arranged.",
+      "category": "Manual Handling",
+      "difficulty": "medium",
+      "tags": ["back-injury", "pre-existing-conditions", "reporting"]
+    },
+    {
+      "id": "cscs069",
+      "question": "Which of these is helpful for managing stress?",
+      "answers": [
+        "Staying out late regularly",
+        "Working longer hours",
+        "Getting adequate rest and sleep",
+        "Consuming alcohol"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Adequate rest and sleep are essential for managing stress, maintaining health, and staying alert and safe at work.",
+      "category": "Mental Health",
+      "difficulty": "easy",
+      "tags": ["stress-management", "wellbeing", "rest"]
+    },
+    {
+      "id": "cscs070",
+      "question": "How many points of contact should you maintain when using a ladder?",
+      "answers": [
+        "Four points of contact",
+        "Two points of contact",
+        "One point of contact",
+        "Three points of contact"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Always maintain three points of contact (two hands and one foot, or two feet and one hand) when climbing ladders.",
+      "category": "Working at Height",
+      "difficulty": "easy",
+      "tags": ["ladders", "safe-working", "three-points"]
+    },
+    {
+      "id": "cscs071",
+      "question": "Yellow underground service pipes carry:",
+      "answers": [
+        "Electricity cables",
+        "Water supply",
+        "Gas pipelines",
+        "Telecommunications cables"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Yellow markings indicate telecommunication cables underground. Always check service plans before excavating.",
+      "category": "General Safety",
+      "difficulty": "medium",
+      "tags": ["underground-services", "color-coding", "excavation"]
+    },
+    {
+      "id": "cscs072",
+      "question": "What are the three elements of the fire triangle? (Choose 3 answers)",
+      "answers": [
+        "Carbon dioxide",
+        "Nitrogen",
+        "Heat",
+        "Fuel",
+        "Oxygen"
+      ],
+      "multipleAnswers": true,
+      "correctAnswerIndices": [2, 3, 4],
+      "explanation": "Fire requires three elements: heat (ignition source), fuel (combustible material), and oxygen. Remove any one to extinguish fire.",
+      "category": "Fire Safety",
+      "difficulty": "medium",
+      "tags": ["fire-triangle", "fire-theory", "multiple-answer"]
+    },
+    {
+      "id": "cscs073",
+      "question": "What is the correct procedure when petrol spills during refueling?",
+      "answers": [
+        "Contain, then Stop, then Notify",
+        "Stop, then Contain, then Notify",
+        "Notify, then Stop, then Contain",
+        "Contain, then Notify, then Stop"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Stop refueling immediately, contain the spill to prevent spread, then notify supervisor. Petrol vapors are highly flammable.",
+      "category": "Fire Safety",
+      "difficulty": "medium",
+      "tags": ["fuel-spills", "emergency-procedures", "petrol"]
+    },
+    {
+      "id": "cscs074",
+      "question": "What increases the risk of lung cancer?",
+      "answers": [
+        "Lifting heavy objects repeatedly",
+        "Using vibrating tools regularly",
+        "Breathing in harmful dust over time",
+        "Prolonged sun exposure"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Inhaling harmful dusts like asbestos, silica, and certain wood dusts significantly increases lung cancer risk over time.",
+      "category": "Hazardous Substances",
+      "difficulty": "easy",
+      "tags": ["lung-cancer", "dust", "respiratory-health"]
+    },
+    {
+      "id": "cscs075",
+      "question": "What is the main purpose of a risk assessment?",
+      "answers": [
+        "To show locations of safety equipment",
+        "To record accident statistics",
+        "To identify hazards and provide safe methods for carrying out tasks",
+        "To indicate who the site safety lead is"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Risk assessments identify hazards, evaluate risks, and establish safe working methods to prevent accidents and injuries.",
+      "category": "General Safety",
+      "difficulty": "easy",
+      "tags": ["risk-assessment", "hazards", "safe-methods"]
+    },
+    {
+      "id": "cscs076",
+      "question": "When working alone, you must:",
+      "answers": [
+        "Write your own risk assessment",
+        "Take extra PPE with you",
+        "Maintain regular contact with your team",
+        "Avoid interacting with the public"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Lone workers must maintain regular contact so someone knows they are safe and can raise alarm if contact is lost.",
+      "category": "General Safety",
+      "difficulty": "medium",
+      "tags": ["lone-working", "communication", "welfare"]
+    }
+  ]
+}
