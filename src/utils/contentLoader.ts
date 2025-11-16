@@ -3,9 +3,13 @@ import type { RevisionContent } from '../types';
 /**
  * Load revision content from JSON file
  */
-export async function loadRevisionContent(path: string = '/data/cscs-questions.json'): Promise<RevisionContent> {
+export async function loadRevisionContent(path: string = 'data/cscs-questions.json'): Promise<RevisionContent> {
   try {
-    const response = await fetch(path);
+    // Construct the full path using Vite's base URL
+    const baseUrl = import.meta.env.BASE_URL;
+    const fullPath = `${baseUrl}${path}`;
+
+    const response = await fetch(fullPath);
     if (!response.ok) {
       throw new Error(`Failed to load content: ${response.statusText}`);
     }
