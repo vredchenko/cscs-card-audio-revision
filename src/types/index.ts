@@ -60,6 +60,7 @@ export interface SessionStats {
 
 export interface AppSettings {
   displayMode: 'normal' | 'dyslexia';
+  fontFamily: 'system' | 'opendyslexic' | 'atkinson' | 'lexend' | 'comic';
   ttsEnabled: boolean;
   ttsAutoPlay: boolean;
   ttsRate: number; // Speech rate: 0.5 to 2.0

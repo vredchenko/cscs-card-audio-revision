@@ -15,6 +15,7 @@ interface AppContextType {
 
 const defaultSettings: AppSettings = {
   displayMode: 'normal',
+  fontFamily: 'system',
   ttsEnabled: true,
   ttsAutoPlay: false,
   ttsRate: 1.0,

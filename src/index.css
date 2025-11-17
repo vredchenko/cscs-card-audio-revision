@@ -13,6 +13,11 @@
 
   /* Font settings - normal mode */
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-opendyslexic: 'OpenDyslexic', 'Comic Sans MS', sans-serif;
+  --font-family-atkinson: 'Atkinson Hyperlegible', Arial, sans-serif;
+  --font-family-lexend: 'Lexend', Arial, sans-serif;
+  --font-family-comic: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
   --font-size-base: 16px;
   --font-size-small: 14px;
   --font-size-medium: 16px;
@@ -62,6 +67,34 @@
 
 [data-font-size="large"] {
   --font-size-base: 20px;
+}
+
+/* Font family variations */
+[data-font-family="system"] {
+  --font-family: var(--font-family-system);
+}
+
+[data-font-family="opendyslexic"] {
+  --font-family: var(--font-family-opendyslexic);
+  --line-height: 1.8;
+  --letter-spacing: 0.02em;
+}
+
+[data-font-family="atkinson"] {
+  --font-family: var(--font-family-atkinson);
+  --line-height: 1.6;
+  --letter-spacing: 0.01em;
+}
+
+[data-font-family="lexend"] {
+  --font-family: var(--font-family-lexend);
+  --line-height: 1.7;
+}
+
+[data-font-family="comic"] {
+  --font-family: var(--font-family-comic);
+  --line-height: 1.8;
+  --letter-spacing: 0.05em;
 }
 
 /* Reset and base styles */

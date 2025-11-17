@@ -135,6 +135,7 @@ function App() {
       className="app"
       data-display-mode={settings.displayMode}
       data-font-size={settings.fontSize}
+      data-font-family={settings.fontFamily}
     >
       <header className="app-header">
         <h1>CSCS Revision</h1>
