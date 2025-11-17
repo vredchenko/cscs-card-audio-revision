@@ -125,6 +125,63 @@ export function Settings() {
                 </div>
               </div>
 
+              {/* Font Family */}
+              <div className="setting-group">
+                <h3>Font Family</h3>
+                <div className="setting-options">
+                  <label className="setting-option">
+                    <input
+                      type="radio"
+                      name="fontFamily"
+                      value="system"
+                      checked={settings.fontFamily === 'system'}
+                      onChange={(e) => updateSettings({ fontFamily: e.target.value as any })}
+                    />
+                    <span>System Default</span>
+                  </label>
+                  <label className="setting-option">
+                    <input
+                      type="radio"
+                      name="fontFamily"
+                      value="opendyslexic"
+                      checked={settings.fontFamily === 'opendyslexic'}
+                      onChange={(e) => updateSettings({ fontFamily: e.target.value as any })}
+                    />
+                    <span>OpenDyslexic</span>
+                  </label>
+                  <label className="setting-option">
+                    <input
+                      type="radio"
+                      name="fontFamily"
+                      value="atkinson"
+                      checked={settings.fontFamily === 'atkinson'}
+                      onChange={(e) => updateSettings({ fontFamily: e.target.value as any })}
+                    />
+                    <span>Atkinson Hyperlegible</span>
+                  </label>
+                  <label className="setting-option">
+                    <input
+                      type="radio"
+                      name="fontFamily"
+                      value="lexend"
+                      checked={settings.fontFamily === 'lexend'}
+                      onChange={(e) => updateSettings({ fontFamily: e.target.value as any })}
+                    />
+                    <span>Lexend</span>
+                  </label>
+                  <label className="setting-option">
+                    <input
+                      type="radio"
+                      name="fontFamily"
+                      value="comic"
+                      checked={settings.fontFamily === 'comic'}
+                      onChange={(e) => updateSettings({ fontFamily: e.target.value as any })}
+                    />
+                    <span>Comic Sans</span>
+                  </label>
+                </div>
+              </div>
+
               {/* Text-to-Speech */}
               <div className="setting-group">
                 <h3>Text-to-Speech</h3>
