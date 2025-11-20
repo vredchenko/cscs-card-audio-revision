@@ -5,6 +5,13 @@ import { VitePWA } from 'vite-plugin-pwa'
 // https://vite.dev/config/
 export default defineConfig({
   base: '/cscs-card-audio-revision/',
+  define: {
+    __GIT_SHA__: JSON.stringify(process.env.GITHUB_SHA || 'dev'),
+    __GIT_SHA_SHORT__: JSON.stringify((process.env.GITHUB_SHA || 'dev').slice(0, 7)),
+    __GITHUB_RUN_ID__: JSON.stringify(process.env.GITHUB_RUN_ID || ''),
+    __GITHUB_RUN_NUMBER__: JSON.stringify(process.env.GITHUB_RUN_NUMBER || ''),
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
+  },
   plugins: [
     react(),
     VitePWA({

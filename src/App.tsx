@@ -197,10 +197,24 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>CSCS Health & Safety Revision</p>
-        <p className="footer-note">
-          Practice questions for CSCS certification preparation
+        <p className="footer-stats">
+          Question Bank: {allQuestions.length} questions
         </p>
+        <p className="footer-build">
+          Build: {__GIT_SHA_SHORT__}
+          {__GITHUB_RUN_NUMBER__ && ` (#${__GITHUB_RUN_NUMBER__})`}
+        </p>
+        {__GITHUB_RUN_ID__ && (
+          <p className="footer-build-link">
+            <a
+              href={`https://github.com/vredchenko/cscs-card-audio-revision/actions/runs/${__GITHUB_RUN_ID__}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View CI/CD Run
+            </a>
+          </p>
+        )}
       </footer>
     </div>
   );

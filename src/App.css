@@ -42,13 +42,33 @@
 
 .app-footer p {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
 }
 
-.footer-note {
-  margin-top: var(--spacing-xs);
-  font-size: 0.75rem;
+.footer-stats {
+  font-weight: 600;
+  font-size: 0.875rem !important;
+  margin-bottom: var(--spacing-xs) !important;
+}
+
+.footer-build {
+  font-family: monospace;
+  opacity: 0.8;
+}
+
+.footer-build-link {
+  margin-top: var(--spacing-xs) !important;
+}
+
+.footer-build-link a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.footer-build-link a:hover {
+  text-decoration: underline;
 }
 
 /* Loading state */
